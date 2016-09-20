@@ -25,7 +25,6 @@ class AppKernel extends Kernel
             //
             // Application Bundles
             //
-            new AppBundle\AppBundle(),
             new Acme\CoreBundle\AcmeCoreBundle(),
             new Acme\RestBundle\AcmeRestBundle(),
         ];
