@@ -1,3 +1,56 @@
-acme_rest_homepage:
-    path:     /
-    defaults: { _controller: AcmeRestBundle:Default:index }
+#
+# Athlete Routes
+#
+acme_rest_athlete_list:
+    path:     /athletes
+    methods: ["GET"]
+    defaults: { _controller: AcmeRestBundle:Athlete:listAthletes }
+
+acme_rest_athlete_get:
+    path:     /athlete/{id}
+    methods: ["GET"]
+    defaults: { _controller: AcmeRestBundle:Athlete:getAthlete }
+
+acme_rest_athlete_create:
+    path:     /athlete
+    methods: ["POST"]
+    defaults: { _controller: AcmeRestBundle:Athlete:createAthlete }
+
+acme_rest_athlete_update:
+    path:     /athlete/{id}
+    methods: ["PUT"]
+    defaults: { _controller: AcmeRestBundle:Athlete:updateAthlete }
+
+acme_rest_athlete_delete:
+    path:     /athlete/{id}
+    methods: ["DELETE"]
+    defaults: { _controller: AcmeRestBundle:Athlete:deleteAthlete }
+
+
+#
+# Team Routes
+#
+acme_rest_team_list:
+    path:     /teams
+    methods: ["GET"]
+    defaults: { _controller: AcmeRestBundle:Team:listTeams }
+
+acme_rest_team_get:
+    path:     /team
+    methods: ["GET"]
+    defaults: { _controller: AcmeRestBundle:Team:getTeam }
+
+acme_rest_team_create:
+    path:     /team
+    methods: ["POST"]
+    defaults: { _controller: AcmeRestBundle:Team:createTeam }
+
+acme_rest_team_update:
+    path:     /team/{id}
+    methods: ["PUT"]
+    defaults: { _controller: AcmeRestBundle:Team:updateTeam }
+
+acme_rest_team_delete:
+    path:     /team/{id}
+    methods: ["DELETE"]
+    defaults: { _controller: AcmeRestBundle:Team:deleteTeam }
